@@ -1,6 +1,6 @@
 # main text of home
 name: Tal Shani
-bio: A Man who travels the world eating noodles
+bio: Security Researcher, Developer and Computer Enthusiast
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -16,9 +16,10 @@ resume: false
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://tal-shani.github.io
+url: https://tal.sh
 # your url: http://USERNAME.github.io
 
+title: "Tal Shani"
 permalink: /:title/
 
 # To enable google analytics, supply your token below
