@@ -3,7 +3,7 @@ name: Tal Shani
 bio: Security Researcher, Developer and Computer Enthusiast
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: Contact details of Tal Shani
 
 # if it's an external image, update below for true
 # better with square images
@@ -17,13 +17,12 @@ resume-external: true
 resume-url: https://google.com/?q=my+resume
 
 url: https://tal.sh
-# your url: http://USERNAME.github.io
 
 title: "Tal Shani"
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+analytics-google: 'UA-151011727-1'
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
