@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tal Shani</title>
+    <meta
+      name="description"
+      content="Tal Shani is a software engineer and engineering leader based in Tel Aviv, and Director of Engineering at OneLayer."
+    >
+    <meta name="theme-color" content="#f3f2ed">
+    <meta name="color-scheme" content="light">
+    <meta property="og:title" content="Tal Shani">
+    <meta property="og:description" content="Software engineer and engineering leader based in Tel Aviv.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tal.sh/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700&amp;family=Instrument+Sans:wdth,wght@75..100,400..600&amp;display=swap"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="masthead">
+        <h1>Tal Shani</h1>
+        <p>Tel Aviv · IL</p>
+      </header>
+
+      <main class="bio">
+        <p>
+          I’m Tal, a software engineer and engineering leader. I’m the
+          <strong>Director of Engineering at
+          <a href="https://onelayer.com/">OneLayer</a></strong>, where I work on
+          cybersecurity for private cellular networks and spend most of my time
+          building systems, teams, and the occasional bridge between the two.
+        </p>
+
+        <p>
+          I’m most interested in the parts of engineering that sit somewhere
+          between <strong>technology, product, and people</strong>: designing
+          systems that hold up over time, making good technical decisions, and
+          creating environments where strong teams can do their best work.
+        </p>
+
+        <p class="personal">
+          Outside of work, I’m usually thinking about design, photography,
+          watches, or some other rabbit hole I’ve gone unnecessarily deep into.
+        </p>
+
+        <button class="alpaca-mark" type="button" aria-label="Make the alpaca jump">
+          <img src="alpaca.svg" alt="" width="48" height="80">
+        </button>
+      </main>
+
+      <footer class="footer">
+        <p>Elsewhere</p>
+        <ul class="links" aria-label="Find Tal online">
+          <li>
+            <a href="https://twitter.com/TalShani_">X <span aria-hidden="true">↗</span></a>
+          </li>
+          <li>
+            <a href="https://github.com/tal-shani">GitHub <span aria-hidden="true">↗</span></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/just-tal">LinkedIn <span aria-hidden="true">↗</span></a>
+          </li>
+          <li>
+            <a href="mailto:tal@tal.sh">Email <span aria-hidden="true">↗</span></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script>
+      const alpaca = document.querySelector(".alpaca-mark");
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+      alpaca.addEventListener("click", () => {
+        if (reducedMotion.matches) return;
+        alpaca.classList.remove("is-jumping");
+        void alpaca.offsetWidth;
+        alpaca.classList.add("is-jumping");
+      });
+
+      alpaca.addEventListener("animationend", (event) => {
+        if (event.animationName === "alpaca-hop") {
+          alpaca.classList.remove("is-jumping");
+        }
+      });
+    </script>
+  </body>
+</html>
